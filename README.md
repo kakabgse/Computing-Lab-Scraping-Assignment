@@ -16,3 +16,5 @@ Here we design our spider or how scrapy will crawl through the web page we chose
 
 Code to execute scrapy in our terminal:
 > scrapy crawl life -t csv
+
+Scrapy outputs the csv in the directory 'life/life/' with the name 'life_items.csv'
