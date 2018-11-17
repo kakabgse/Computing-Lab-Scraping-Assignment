@@ -1,0 +1,54 @@
+# Next button
+response.xpath('//nav[@class="electro-advanced-pagination"]/a[@class="next page-numbers"]/@href').extract()
+
+# Each element on the page
+response.xpath('//div[@class="product-loop-header"]/a[@class="woocommerce-LoopProduct-link woocommerce-loop-product__link"]/@href').extract()
+
+# Brand name
+response.xpath('//span[@itemprop="brand"]//text()').extract()
+
+# Full Product name 
+response.xpath('//h1[@class="product_title entry-title"]//text()').extract()
+
+# Precio (entero)
+response.xpath('//span[@class="entero"]//text()').extract()
+
+# Precio (decimales)
+response.xpath('//span[@class="decimales_precio"]//text()')[0].extract()
+
+# Moneda
+response.xpath('//span[@class="decimales_precio"]//text()')[1].extract()
+
+# Precio sin IVA
+response.xpath('//p[@class="sinIva"]//text()').extract()
+
+# Disponibilidad
+response.xpath('//span[@class="no_stock"]//text()').extract()
+
+# Description
+response.xpath('//div[@class="electro-description clearfix"]/p/text()').extract()
+
+# Product Name
+response.xpath('//div[@class="rTableCell"]//text()')[1].extract()
+
+# CPU
+response.xpath('//div[@class="rTableCell"]//text()')[5].extract()
+
+# Memory
+response.xpath('//div[@class="rTableCell"]//text()')[7].extract()
+
+# Graphics Card
+response.xpath('//div[@class="rTableCell"]//text()')[9].extract()
+
+# Storage
+response.xpath('//div[@class="rTableCell"]//text()')[11].extract()
+
+# Screen
+response.xpath('//div[@class="rTableCell"]//text()')[13].extract()
+
+# Dimensions
+response.xpath('//div[@class="rTableCell"]//text()')[30].extract()
+
+# Weight
+response.xpath('//div[@class="rTableCell"]//text()')[32].extract()
+
